@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$orenge__bg: rgba(83, 9, 64, 0.19);
+
+.block{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    .block_item{
+        width: 30%;
+        padding: 15px 10px;
+        border-radius: 10px;
+        background: $orenge__bg;
+        text-align: center;
+    }
+    .block_item h1{
+        font-size: 32px;
+        color: rgb(42, 105, 223);
+        font-weight: 600;
+    }
+    .block_item p {
+        color: #555;
+        font-size: 16px;
+    }
+    .block_item button {
+        padding: 10px 20px;
+        border: none;
+        background: rgb(181, 181, 181);
+        font-size: 25px;
+        border-radius: 20px;
+        transition: .4s;
+        cursor: pointer;
+        &:hover{
+            background: rgb(140, 140, 140);
+            transition: .4s;
+        }
+    }
+}
+@media (max-width:1360px){
+    .block{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        .block_item{
+            width: 45%;
+        }
+    }
+}
